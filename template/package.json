@@ -1,0 +1,39 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "repository": {
+    "url": "<%= username %>/<%= name %>",
+    "type": "git"
+  },
+  "main": "index.js",
+  <%_ if (cli) { -%>
+  "cli": "cli.js",
+  <%_ } -%>
+  "scripts": {<% if (coverage) { %>
+    "test:cov": "jest --coverage",<% } %>
+    "pretest": "npm run lint",
+    "test": "<% if (unitTest) { %>jest<% } else { %>echo 'no tests!'<% } %>",
+    "lint": "standard"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "author": "<%= username %> <<%= email %>>",
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^7.0.0",
+    "update-notifier": "^1.0.3"
+  },
+  "devDependencies": {<% if (unitTest) { %>
+    "jest": "^19.0.2",<% } %>
+    "standard": "^10.0.2",
+    "node-fetch": "^1.6.3",
+    "husky": "^0.13.3"
+  },
+  <%_ if (unitTest) { -%>
+  "jest": {
+    "testEnvironment": "node"
+  }
+  <%_ } -%>
+}
