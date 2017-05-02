@@ -8,13 +8,14 @@
   },
   "main": "index.js",
   <%_ if (cli) { -%>
-  "cli": "cli.js",
+  "bin": "cli.js",
   <%_ } -%>
   "scripts": {<% if (coverage) { %>
     "test:cov": "jest --coverage",<% } %>
     "pretest": "npm run lint",
     "test": "<% if (unitTest) { %>jest<% } else { %>echo 'no tests!'<% } %>",
-    "lint": "standard"
+    "lint": "standard",
+    "start": "micro"
   },
   "engines": {
     "node": ">= 6"
@@ -28,8 +29,7 @@
   "devDependencies": {<% if (unitTest) { %>
     "jest": "^19.0.2",<% } %>
     "standard": "^10.0.2",
-    "node-fetch": "^1.6.3",
-    "husky": "^0.13.3"
+    "node-fetch": "^1.6.3"
   },
   <%_ if (unitTest) { -%>
   "jest": {

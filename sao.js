@@ -55,12 +55,7 @@ module.exports = {
   move: {
     'gitignore': '.gitignore'
   },
-  post({chalk, isNewFolder, folderName, log, install, init}) {
-    install()
-    init()
-    log.success('Done, let the hacking begin!')
-    if (isNewFolder) {
-      console.log(`  cd ${chalk.yellow(folderName)} to get started!\n`)
-    }
-  }
+  installDependencies: true,
+  gitInit: true,
+  showTip: true // Defaults to true if no `post` function
 }
