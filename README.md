@@ -25,7 +25,7 @@ $ sao tiaanduplessis/template-micro-service
 ### From npm
 
 ```sh
-$ sao template-micro-service
+$ sao micro-service
 ```
 
 ## License
