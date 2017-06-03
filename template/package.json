@@ -23,13 +23,13 @@
   "author": "<%= username %> <<%= email %>>",
   "license": "MIT",
   "dependencies": {
-    "micro": "^7.0.0",
-    "update-notifier": "^1.0.3"
+    "micro": "^7.3.3",
+    "update-notifier": "^2.1.0"
   },
   "devDependencies": {<% if (unitTest) { %>
-    "jest": "^19.0.2",<% } %>
+    "jest": "^20.0.4",<% } %>
     "standard": "^10.0.2",
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.7.1"
   },
   <%_ if (unitTest) { -%>
   "jest": {
