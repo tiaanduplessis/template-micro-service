@@ -1,5 +1,7 @@
 # template-microservice
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/template-micro-service.svg)](https://greenkeeper.io/)
+
 🚀 Kick-start a micro-service with `micro` and `jest`
 
 Based on [generator-micro-service](https://github.com/vadimdemedes/generator-micro-service) by Vadim Demedes.
