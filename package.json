@@ -13,7 +13,7 @@
     "template"
   ],
   "dependencies": {
-    "camelcase": "^4.1.0",
+    "camelcase": "^5.0.0",
     "superb": "^2.0.0"
   }
 }
