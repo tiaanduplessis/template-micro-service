@@ -14,6 +14,6 @@
   ],
   "dependencies": {
     "camelcase": "^5.0.0",
-    "superb": "^2.0.0"
+    "superb": "^3.0.0"
   }
 }
